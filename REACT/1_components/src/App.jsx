@@ -3,11 +3,16 @@ import './App.css'
 import TextComponent from './components/TextComponents'
 import { SecondText, ThirdText } from './components/OtherComponents'
 import Events from './components/Events'
+import MyCSSComponent from './components/MyCSSComponent/MyCSSComponent'
 // <> </>= fragment, sera usada semppre quando agente não quer um div dentro de outra
 function App() {
 //Props
   return (
     <> 
+      <h2>Meu componente CSS</h2>
+      <MyCSSComponent/>
+
+
       <h2>Eventos</h2>
       <Events/>
       {/*
