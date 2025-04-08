@@ -5,6 +5,7 @@ import { SecondText, ThirdText } from './components/OtherComponents'
 import Events from './components/Events'
 import MyCSSComponent from './components/MyCSSComponent/MyCSSComponent'
 import Counter from './components/Counter'
+import ProductQuantity from './components/ProductQuantity'
 // <> </>= fragment, sera usada semppre quando agente não quer um div dentro de outra
 function App() {
 //Props
@@ -12,6 +13,11 @@ function App() {
     <> 
       <h1>Contador</h1>
       <p><Counter/></p>
+
+      <h2>Controle de Quantidade do produtos:</h2>
+      <ProductQuantity/> {/*Usado para adicionar item ao Carrinho,*/}
+                          {/*Para decrementar o processo é parecido*/}
+
       <h2>Meu componente CSS</h2>
       <MyCSSComponent/>
 
