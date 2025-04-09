@@ -22,11 +22,14 @@ const addTask = () =>{
               value = {task}
               onChange={(e) => setTask(e.target.value)}
             />
-            <button onclick={addTask} className={styles.button}>Adicionar</button>
+            <button onClick={addTask} className={styles.button}>Adicionar</button>
             
         </div>
         <ul className={styles.taskList}>
-            <li className={styles.taskItem}>Tarefas</li>
+        {tasks.map((taskItem,index) => (
+            <li key={index} className={styles.taskItem}>{taskItem}</li>
+
+        ))}
         </ul>
     </div>
   )
