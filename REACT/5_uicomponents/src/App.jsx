@@ -3,6 +3,7 @@ import './App.css'
 import Clock from './components/Clock/Clock'
 import ContactForm from './components/ContactForm/ContactForm'
 import Modal from './components/Modal/Modal'
+import Accordion from './components/Accordion/Accordion'
 
 function App() {
 
@@ -18,6 +19,12 @@ function App() {
 
       <h2>Formulario</h2>
       <ContactForm/>
+
+      <hr/>
+
+        
+      <h2>Accordion</h2>  
+      <Accordion></Accordion>
 
     </>
   )
