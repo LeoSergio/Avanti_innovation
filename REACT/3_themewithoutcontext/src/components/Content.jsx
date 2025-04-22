@@ -8,4 +8,4 @@ const Content = ({theme}) => {
   )
 }
 
-export default content
+export default Content
