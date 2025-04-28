@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import './App.css'
-import Header from './components/header'
-
+import Header from './components/Header'
+import Content from './components/Content'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     <>
       <div className={`app ${theme}`}>
         <Header theme={theme} toggleTheme={toggleTheme}/>
-       
+        <Content theme={theme}/>
       </div>
     </>
   )
